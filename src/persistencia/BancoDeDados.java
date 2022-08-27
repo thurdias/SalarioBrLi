@@ -7,16 +7,16 @@ public class BancoDeDados {
 	// Propriedades da classe
 	private Connection objConexao = null;
 	
-	// Método get da classe
+	// MÃ©todo get da classe
 	Connection getObjConexao() {
 		return objConexao;
 	}
 	
-	// Métodos da classe
+	// MÃ©todos da classe
 	void conectar() throws Exception {
 		objConexao = DriverManager.getConnection(
-			"jdbc:oracle:thin:@//192.168.2.3:1521/xe?" +
-			"user=AUTO&password=AUTO");
+			"jdbc:oracle:thin:@//localhost:1521/XEPDB1?" +
+			"user=hr&password=hr");
 	}
 	
 	void desconectar() throws Exception {
