@@ -1,1 +1,1 @@
-# SalarioBrLi
+# Salario Bruto/Líquido
